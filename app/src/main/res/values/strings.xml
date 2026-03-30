@@ -1,3 +1,25 @@
 <resources>
-    <string name="app_name">TFG</string>
+    <string name="app_name">FakeNews Detector</string>
+    
+    <!-- Navigation titles -->
+    <string name="title_main">Verificar</string>
+    <string name="title_history">Historial</string>
+    <string name="title_profile">Perfil</string>
+    
+    <!-- Authentication -->
+    <string name="login">Iniciar Sesión</string>
+    <string name="register">Registrarse</string>
+    <string name="email">Email</string>
+    <string name="password">Contraseña</string>
+    <string name="confirm_password">Confirmar Contraseña</string>
+    
+    <!-- Main -->
+    <string name="enter_news_text">Ingrese el texto de la noticia</string>
+    <string name="verify_news">Verificar Noticia</string>
+    <string name="results">Resultados</string>
+    
+    <!-- Common -->
+    <string name="loading">Cargando...</string>
+    <string name="error">Error</string>
+    <string name="retry">Reintentar</string>
 </resources>

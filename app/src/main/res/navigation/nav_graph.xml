@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_main">
+
+    <fragment
+        android:id="@+id/navigation_main"
+        android:name="com.tudominio.fakenewsdetector.ui.main.MainFragment"
+        android:label="@string/title_main"
+        tools:layout="@layout/fragment_main" />
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.tudominio.fakenewsdetector.ui.history.HistoryFragment"
+        android:label="@string/title_history"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.tudominio.fakenewsdetector.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.tudominio.fakenewsdetector.ui.auth.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" />
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.tudominio.fakenewsdetector.ui.auth.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register" />
+
+    <fragment
+        android:id="@+id/adminStatsFragment"
+        android:name="com.tudominio.fakenewsdetector.ui.admin.AdminStatsFragment"
+        android:label="Admin Stats"
+        tools:layout="@layout/fragment_admin_stats" />
+
+    <fragment
+        android:id="@+id/adminHistoryFragment"
+        android:name="com.tudominio.fakenewsdetector.ui.admin.AdminHistoryFragment"
+        android:label="Admin History"
+        tools:layout="@layout/fragment_admin_history" />
+
+    <fragment
+        android:id="@+id/adminBlacklistFragment"
+        android:name="com.tudominio.fakenewsdetector.ui.admin.AdminBlacklistFragment"
+        android:label="Admin Blacklist"
+        tools:layout="@layout/fragment_admin_blacklist" />
+
+</navigation>
