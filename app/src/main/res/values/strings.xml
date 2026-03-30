@@ -9,9 +9,14 @@
     <!-- Authentication -->
     <string name="login">Iniciar Sesión</string>
     <string name="register">Registrarse</string>
+    <string name="create_account">Crear Cuenta</string>
     <string name="email">Email</string>
     <string name="password">Contraseña</string>
     <string name="confirm_password">Confirmar Contraseña</string>
+    <string name="display_name">Nombre</string>
+    <string name="already_have_account">¿Ya tienes cuenta? Inicia sesión</string>
+    <string name="or_continue_with">O continúa con</string>
+    <string name="sign_in_with_google">Iniciar sesión con Google</string>
     
     <!-- Main -->
     <string name="enter_news_text">Ingrese el texto de la noticia</string>
@@ -22,4 +27,7 @@
     <string name="loading">Cargando...</string>
     <string name="error">Error</string>
     <string name="retry">Reintentar</string>
+    
+    <!-- Google Sign-In -->
+    <string name="google_web_client_id">YOUR_WEB_CLIENT_ID_HERE</string>
 </resources>
