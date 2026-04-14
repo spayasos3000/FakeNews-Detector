@@ -3,8 +3,40 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/navigation_main">
+    app:startDestination="@id/loginFragment">
 
+    <!-- Authentication Fragments -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.tudominio.fakenewsdetector.ui.auth.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+        
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/navigation_main"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.tudominio.fakenewsdetector.ui.auth.RegisterFragment"
+        android:label="Register"
+        tools:layout="@layout/fragment_register">
+        
+        <action
+            android:id="@+id/action_registerFragment_to_mainFragment"
+            app:destination="@id/navigation_main"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <!-- Main Navigation Fragments -->
     <fragment
         android:id="@+id/navigation_main"
         android:name="com.tudominio.fakenewsdetector.ui.main.MainFragment"
@@ -23,18 +55,7 @@
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" />
 
-    <fragment
-        android:id="@+id/loginFragment"
-        android:name="com.tudominio.fakenewsdetector.ui.auth.LoginFragment"
-        android:label="Login"
-        tools:layout="@layout/fragment_login" />
-
-    <fragment
-        android:id="@+id/registerFragment"
-        android:name="com.tudominio.fakenewsdetector.ui.auth.RegisterFragment"
-        android:label="Register"
-        tools:layout="@layout/fragment_register" />
-
+    <!-- Admin Fragments -->
     <fragment
         android:id="@+id/adminStatsFragment"
         android:name="com.tudominio.fakenewsdetector.ui.admin.AdminStatsFragment"
